@@ -34,3 +34,7 @@ her. Auch ein Algorithmus kennt nicht immer die volle Wahrheit.
 Die Arbeit interagiert mit den Besucher*innen der Installation »Logistics
 of Truth«, versetzt sie in andere Perspektiven und schafft zusätzlich
 eine Verbindung zwischen den fünf Arbeiten der Installation.
+
+https://zerstoyber.github.io/Revelation/
+
+
