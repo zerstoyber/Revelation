@@ -18,8 +18,8 @@ function setup() {
   capture = createCapture(VIDEO);
   capture.size(windowWidth, windowHeight);
   capture.hide();
-
-	poseNet = ml5.poseNet(capture, modelReady);
+  
+  poseNet = ml5.poseNet(capture, modelReady);
   poseNet.on('pose', gotPoses);
   poseNet.on('pose', function(results) {
     poses = results;
@@ -63,6 +63,7 @@ function draw() {
   let sunSize = 500;
 
   image(sun, windowWidth - sunX,sunY - 300, sunSize, sunSize);
+	image(capture,0,0);
 }
 
 function windowResized() {
