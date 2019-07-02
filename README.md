@@ -1,7 +1,7 @@
-## Revelation
+# Revelation
 Diese Arbeit ist ein Teil des Projekts »Logistics of Truth«, welches zwischen Oktober 2018 und Februar 2019 an der Kunsthochschule Burg Giebichenstein In Halle entwickelt wurde.
 
-# Abstract
+## Abstract
 Was bedeutet der Begriff Offenbarung für einen Menschen in der
 heutigen Zeit und was hat er mit dem Thema Wahrheit zu tun?
 Der Begriff findet seine häufigste Anwendung in religiösen Kontexten
