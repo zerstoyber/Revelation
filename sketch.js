@@ -44,26 +44,20 @@ function gotPoses(poses) {
 	}
 }
 
-function modelReady() {
-	console.log('Revelation Ready');
-}
+function modelReady() { console.log('Revelation Ready'); }
 
 /////////////Draw/////////////////////////////////////////
 
 function draw() {
   background(0);
-
   let d = dist(noseX, noseY, eyelX, eyelY);
-
   let sunX = noseX + 250;
   //SunY -> Installation
   //let sunY = ((d / 220) * 1440) - 1400;
   //SunY -> HomesScreen
   let sunY = noseY;
   let sunSize = 500;
-
   image(sun, windowWidth - sunX,sunY - 300, sunSize, sunSize);
-	image(capture,0,0);
 }
 
 function windowResized() {
