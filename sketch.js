@@ -16,10 +16,11 @@ function setup() {
   noCursor();
 
   capture = createCapture(VIDEO);
-	  capture.size(320, 240);
+  //capture.size(windowWidth, windowHeight);
+  capture.size(320, 240);
   capture.hide();
-  
-  poseNet = ml5.poseNet(capture, modelReady);
+
+	poseNet = ml5.poseNet(capture, modelReady);
   poseNet.on('pose', gotPoses);
   poseNet.on('pose', function(results) {
     poses = results;
@@ -44,20 +45,30 @@ function gotPoses(poses) {
 	}
 }
 
-function modelReady() { console.log('Revelation Ready'); }
+function modelReady() {
+	console.log('Revelation Ready');
+}
 
 /////////////Draw/////////////////////////////////////////
 
 function draw() {
   background(0);
+
   let d = dist(noseX, noseY, eyelX, eyelY);
-  let sunX = noseX;
+
+  let sunX = noseX + 800;
+//  let sunX = noseX + 250;
+
   //SunY -> Installation
   //let sunY = ((d / 220) * 1440) - 1400;
   //SunY -> HomesScreen
   let sunY = noseY;
   let sunSize = 500;
-  image(sun, windowWidth - sunX,sunY - 300, sunSize, sunSize);
+  sX = constrain(sunX, 0, windowWidth);
+  sY = constrain(sunY, 0, windowHeight);
+
+//  image(sun, windowWidth - sunX,sunY - 300, sunSize, sunSize);
+  image(sun, windowWidth - sX,sY, sunSize, sunSize);
 }
 
 function windowResized() {
