@@ -51,7 +51,7 @@ function modelReady() { console.log('Revelation Ready'); }
 function draw() {
   background(0);
   let d = dist(noseX, noseY, eyelX, eyelY);
-  let sunX = noseX + 250;
+  let sunX = noseX;
   //SunY -> Installation
   //let sunY = ((d / 220) * 1440) - 1400;
   //SunY -> HomesScreen
