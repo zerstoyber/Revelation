@@ -16,7 +16,7 @@ function setup() {
   noCursor();
 
   capture = createCapture(VIDEO);
-  capture.size(windowWidth, windowHeight);
+	  capture.size(320, 240);
   capture.hide();
   
   poseNet = ml5.poseNet(capture, modelReady);
