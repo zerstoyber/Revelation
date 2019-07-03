@@ -64,8 +64,8 @@ function draw() {
   //SunY -> HomesScreen
   let sunY = noseY;
   let sunSize = 500;
-  sX = constrain(sunX, 0, windowWidth);
-  sY = constrain(sunY, 0, windowHeight);
+  sX = constrain(sunX, 0, 1536);
+  sY = constrain(sunY, 0, 2048);
 
 //  image(sun, windowWidth - sunX,sunY - 300, sunSize, sunSize);
   image(sun, windowWidth - sX,sY, sunSize, sunSize);
