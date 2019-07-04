@@ -62,7 +62,7 @@ function draw() {
   //SunY -> Installation
   //let sunY = ((d / 220) * 1440) - 1400;
   //SunY -> HomesScreen
-  let sunY = noseY;
+  let sunY = noseY+200;
   let sunSize = 500;
   sX = constrain(sunX, 0, 1536);
   sY = constrain(sunY, 0, 2048);
