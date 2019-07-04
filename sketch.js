@@ -9,6 +9,13 @@ let noseY = 0;
 let eyelX = 0;
 let eyelY = 0;
 
+function isFullscreen() {
+  return (window.fullScreen || 
+    (window.innerWidth == screen.width && window.innerHeight == screen.height) || 
+    (window.innerWidth >= screen.width && window.innerHeight >= screen.height) || /* Fix for chrome when zoom is < 100%  */
+    (!window.screenTop && !window.screenY))
+}
+
 /////Setup/////////////////////////////////////////////////
 
 function setup() {
