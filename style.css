@@ -6,39 +6,3 @@ html, body {
 canvas {
   display: block;
 }
-
-:-webkit-full-screen body,
-:-moz-full-screen body,
-:-ms-fullscreen body {
-	/* properties */
-	width: 100vw;
-	height: 100vh;
-}
-
-:full-screen body {
-	/*pre-spec */
-	/* properties */
-	width: 100vw;
-	height: 100vh;
-}
-
-:fullscreen body {
-	/* spec */
-	/* properties */
-	width: 100vw;
-	height: 100vh;
-}
-
-/* deeper elements */
-
-:-webkit-full-screen body {
-	width: 100vw;
-	height: 100vh;
-}
-
-/* styling the backdrop*/
-
-::backdrop,
-::-ms-backdrop {
-	/* Custom styles */
-}
