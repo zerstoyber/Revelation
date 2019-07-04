@@ -56,7 +56,7 @@ function draw() {
 
   let d = dist(noseX, noseY, eyelX, eyelY);
 
-  let sunX = noseX + 700;
+  let sunX = noseX + 500;
 //  let sunX = noseX + 250;
 
   //SunY -> Installation
